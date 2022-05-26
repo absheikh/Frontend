@@ -1,0 +1,448 @@
+:root {
+  --white: #fff;
+  --black: #000000;
+  --ash: rgba(0, 0, 0, 0.5);
+  --dark-ash: #4e4e4e;
+  --yellow: #e19133;
+  --red: #e13333;
+}
+
+/* Left sidebard */
+.left-sidebar {
+  position: block;
+  height: 100vh;
+  overflow: auto;
+  /* width: 300px; */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.left-sidebar .links {
+  list-style: none;
+}
+.left-sidebar .links li {
+  position: relative;
+  margin-bottom: 2.5rem;
+
+  width: 100%;
+}
+.left-sidebar .links li:hover {
+  cursor: pointer;
+}
+.left-sidebar .links li .icon {
+  margin-right: 1.5rem;
+}
+.left-sidebar .links li a {
+  /* display: flex; */
+  /* text-align: center; */
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: var(--ash);
+}
+.left-sidebar .links li.active a {
+  color: var(--black);
+}
+.left-sidebar .links li:hover {
+  cursor: pointer;
+}
+.left-sidebar .links li:hover a {
+  color: var(--black);
+}
+.left-sidebar .links li:hover .calendar_icon path {
+  stroke-opacity: 1;
+  stroke: var(--black);
+}
+.left-sidebar .links li:hover .settings_icon {
+  stroke-opacity: 1;
+  stroke: var(--black);
+}
+.left-sidebar .logo {
+  margin: 2.9375rem 3.75rem 3.75rem 0;
+}
+.left-sidebar hr {
+  height: 1px;
+  color: var(--ash);
+  width: 153px;
+  margin-left: 3.75rem;
+}
+.left-sidebar .posts {
+  position: relative;
+}
+.left-sidebar .posts .plus_icon {
+  position: absolute;
+  top: 0px;
+  right: 2rem;
+  cursor: pointer;
+}
+.left-sidebar .posts h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.left-sidebar .posts-links {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+.left-sidebar .posts-links li {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  width: 100%;
+}
+.left-sidebar .posts-links li:hover {
+  cursor: pointer;
+}
+.left-sidebar .posts-links li .icon {
+  margin-right: 1.5rem;
+}
+.left-sidebar .posts-links li a {
+  /* display: flex; */
+  /* text-align: center; */
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: var(--ash);
+}
+.left-sidebar .posts-links li.active a {
+  color: var(--black);
+}
+.left-sidebar .posts-links li:hover {
+  cursor: pointer;
+}
+.left-sidebar .posts-links li:hover a {
+  color: var(--black);
+}
+
+/* Right sidebard */
+.right-sidebar {
+}
+
+/* Main */
+.main {
+  background-color: var(--ash);
+}
+.main .main-cont {
+  margin: 2.9375rem 2.5rem;
+}
+.main .title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+.main .performance.card {
+  /* width: 233.33px; */
+  /* height: 100px; */
+  padding: 27px 10px;
+  background: linear-gradient(
+    102.36deg,
+    #e19133 20.42%,
+    rgba(225, 51, 51, 0.37) 99.88%
+  );
+  border-radius: 5px;
+  border: none;
+}
+.main .performance.card h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.main .performance.card span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+.main .statistics.card.light {
+  display: flex;
+  flex-direction: row;
+  /* width: 233.33px; */
+  /* height: 100px; */
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+.main .statistics.card.light .stat {
+  padding: 29px 30px;
+}
+.main .statistics.card.light .stat h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.main .statistics.card.light .stat span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #e19133;
+}
+.main .statistics.card .border {
+  margin: 1.5625rem 0;
+}
+.main .statistics.card.light .progressb {
+  --value: 65;
+}
+
+.main .statistics.card.light .circular {
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  transform: scale(2);
+}
+.main .statistics.card.light .circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 25%;
+  left: 25%;
+  height: 25px;
+  width: 25px;
+  margin: -5px 0 0 -5px;
+  background: var(--white);
+  border-radius: 100%;
+}
+.main .statistics.card.light .circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 6px;
+  font-weight: 500;
+  color: var(--yellow);
+}
+.main .statistics.card.light .circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 30px, 30px, 15px);
+}
+.main .statistics.card.light .circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 15px, 50px, 0px);
+  background: var(--yellow);
+}
+.main .statistics.card.light .circle .left .progress {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.main .statistics.card.light .circle .right {
+  transform: rotate(180deg);
+  z-index: 3;
+}
+.main .statistics.card.light .circle .right .progress {
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+@keyframes right {
+  25% {
+    transform: rotate(45deg);
+  }
+}
+
+/* Yellow */
+.main .statistics.card.yellow {
+  background: #e19133;
+
+  display: flex;
+  flex-direction: row;
+  /* width: 233.33px; */
+  /* height: 100px; */
+
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+.main .statistics.card.yellow .stat {
+  padding: 29px 30px;
+}
+.main .statistics.card.yellow .stat h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.main .statistics.card.yellow .stat span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.main .statistics.card.yellow .circular {
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  transform: scale(2);
+}
+.main .statistics.card.yellow .circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 25%;
+  left: 25%;
+  height: 25px;
+  width: 25px;
+  margin: -5px 0 0 -5px;
+  background: var(--yellow);
+  border-radius: 100%;
+}
+.main .statistics.card.yellow .circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 6px;
+  font-weight: 500;
+  color: var(--white);
+}
+.main .statistics.card.yellow .circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 30px, 30px, 15px);
+}
+.main .statistics.card.yellow .circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 15px, 50px, 0px);
+  background: rgba(0, 0, 0, 0.95);
+}
+.main .statistics.card.yellow .circle .left .progress {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.main .statistics.card.yellow .circle .right {
+  transform: rotate(180deg);
+  z-index: 3;
+}
+.main .statistics.card.yellow .circle .right .progress {
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+@keyframes right {
+  25% {
+    transform: rotate(45deg);
+  }
+}
+
+/* //Monthly Tasks */
+
+.main .monthly_task_cont {
+  background-color: var(--white);
+  padding: 1rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+.main .monthly_task_cont .monthly_tasks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.main .monthly_task_cont .monthly_tasks li {
+  /* bac */
+  /* width: 100%; */
+}
+.main .monthly_task_cont .monthly_tasks li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.main .monthly_task_cont .monthly_tasks li:hover {
+  padding: 0.034rem;
+}
+.main .monthly_task_cont .monthly_tasks li a .icon {
+  margin-right: 0.625rem;
+}
+.main .monthly_task_cont .monthly_tasks li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.main .monthly_task_cont .monthly_tasks li a h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+  margin-bottom: 5px;
+}
+.main .monthly_task_cont .monthly_tasks li a span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.right-sidebar {
+  padding: 1rem;
+}
