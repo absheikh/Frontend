@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Frontend Developer Test Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img width="1280" alt="Screenshot 2022-05-27 at 10 33 07 PM" src="https://user-images.githubusercontent.com/26444671/170792262-105bdb18-4c08-4a7f-bdc6-92c5d0b7273c.png">
+Web Version
+
+<img width="475" alt="Screenshot 2022-05-27 at 10 34 11 PM" src="https://user-images.githubusercontent.com/26444671/170792311-2a9892b1-9ec3-441a-a4fc-dfee6b8d77ef.png">
+Mobile Version
 
 ## Available Scripts
 
