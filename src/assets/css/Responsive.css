@@ -1,0 +1,126 @@
+:root {
+  --white: #fff;
+  --black: #000000;
+  --ash: rgba(0, 0, 0, 0.5);
+  --dark-ash: #4e4e4e;
+  --yellow: #e19133;
+  --red: #e13333;
+}
+
+@media (max-width: 900px) {
+  .header-mobile {
+    display: flex;
+  }
+  .dashboard-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-sidebar {
+    top: 0;
+    height: 100%;
+    width: auto;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    background-color: var(--white);
+    transition: 5s;
+    box-shadow: 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .left-sidebar .logo img {
+    margin: auto;
+    display: block;
+    height: 45px;
+    /* width: 10px; */
+  }
+  .left-sidebar hr {
+    /* position: absolute; */
+    height: 100%;
+    color: var(--ash);
+
+    margin: auto;
+  }
+  .left-sidebar .links li .icon {
+    margin-right: 2px;
+  }
+  .left-sidebar .links li .icon {
+    width: 30px;
+  }
+  .left-sidebar .links li a {
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height */
+  }
+
+  .left-sidebar .posts .plus_icon {
+    right: 3px;
+  }
+  .left-sidebar .posts-links li .icon {
+    margin-right: 2px;
+  }
+  .left-sidebar .posts-links li a {
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height */
+
+    color: var(--ash);
+  }
+  .main {
+    width: 100%;
+  }
+  .right-sidebar {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    background-color: var(--white);
+    transition: 5s;
+  }
+
+  .dashboard-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-sidebar .closebtn {
+    display: block;
+    transition: all 5s;
+  }
+  .right-sidebar {
+    top: 0;
+    right: 0;
+    margin-top: 57px;
+    height: 100%;
+    width: auto;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    background-color: var(--white);
+    transition: 5s;
+    box-shadow: 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 19092;
+  }
+  .right-sidebar.clicked {
+    display: block;
+    transition: 5s !important;
+  }
+  .left-sidebar.clicked {
+    display: block;
+    transition: 5s !important;
+  }
+  .modal.fade {
+    z-index: 10000000 !important;
+  }
+  .right-sidebar .footer {
+    position: fixed;
+    /* bottom: 0; */
+    /* margin-top: -30px; */
+  }
+
+  .right-sidebar .header {
+    display: none;
+  }
+}
